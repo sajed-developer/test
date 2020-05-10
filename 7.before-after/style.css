@@ -1,0 +1,56 @@
+body{
+	margin:0;
+}
+.box {
+	height: 1000px;
+}
+.wuhan {
+	height: 300px;
+	background-color: rebeccapurple;
+	width: 300px;
+	margin:auto;
+	margin-top: 200px;
+	position: relative;
+	transition: 1s;
+}
+.wuhan:hover{
+	transform: rotate(90deg);
+}
+.wuhan:before {
+		content: '';
+		clear: both;
+		display: block;
+		right: -100px;
+		bottom: -100px;
+		height: 100px;
+		width: 100px;
+		background-color: red;
+		position: absolute;
+		transition: 1s;
+}
+.wuhan:after {
+		content: '';
+		clear: both;
+		display: block;
+		top: -100px;
+		left: -100px;
+		height: 100px;
+		width: 100px;
+		background-color: skyblue;
+		position: absolute;
+		transition: 1s;
+}
+
+.wuhan:hover:before {
+		right: 100%;
+		bottom: 100%;
+		color: black
+
+}
+.wuhan:hover:after {
+		top: 100%;
+		left: 100%;
+		color: navy;
+
+
+}
